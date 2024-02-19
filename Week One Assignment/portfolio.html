@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Victor's Portfolio Website</title>
+        <style>
+            body {
+                scroll-behavior: smooth;
+            }
+            nav {
+                position: fixed;
+                overflow: hidden;
+                top: 0%;
+                height: 10vh;
+                width: 100%;
+                background-color: aliceblue;
+            }
+
+            nav > ul{float: right; width: 50%}
+
+            section {
+                height: 90vh;
+                width: 60%;
+                margin: auto;
+            }
+
+            #home {
+                margin-top: 15vh;
+            }
+
+            #about{margin-bottom: -20vh;}
+
+            h2 {
+                color: brown;
+            }
+
+            p {
+                line-height: 1.8;
+                font-size: 20px;
+                text-align: justify;
+            }
+
+            blockquote{font-size: 18px; background-color: rgb(240, 248, 255, 0.8); color: brown; text-align: justify;}
+            li {
+                display: inline-block;
+                font-size: large;
+                width: 20%;
+            }
+
+            li > a {
+                text-decoration: none;
+                color: brown;
+            }
+
+            li> a:hover {
+                background-color: brown;
+                color: whitesmoke;
+            }
+
+            .detail{display: inline-block; width: 82%; margin-left: 5%; float: right;}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#project">PROJECTS</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h2>WELCOME</h2>
+            <hr />
+            <p>
+                This is the landing spot for this barebones website. This
+                website does not have many cool features like games, media
+                files, ninja tricks, cooking tips, or the bare minimum - good
+                css!<br />
+                Since you have journeyed here, I might as well tell you a little
+                bit about myself and my journey as a programmer (or at least I
+                aspire to be one!).
+                <br /><br />Have a look at the next few sections for my details
+                and projects I have built, so far, in my PLP journey. While you
+                were not looking, I filled the rest of this page with some Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+                exercitationem sed consequuntur impedit ex, nam id fugiat eos
+                ipsa cumque provident, ullam, et autem aspernatur esse obcaecati
+                cum. Labore, aliquid!<br /><br />
+                Here comes another Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eveniet quos assumenda unde dolorem rerum
+                officia, officiis debitis neque consequuntur quod quae. Quas
+                harum, sequi perspiciatis eius voluptas sapiente quia maxime.
+            </p>
+        </section>
+        
+        <section id="about">
+            <h2>ABOUT ME</h2>
+            <hr />
+            <p>
+                Okay, you caught me in the last section. I cheated and filled
+                the page with some bogus generic information. However, what am I
+                to do when writing content is sometimes tedious. I'm sure
+                companies will have a content guy and I can happily design
+                websites or write proper backend logic all day.
+                <br />Anyway, I promised to tell you about myself. I suppose a sort of resume listing style will suffice for this acquaintance.<br/>
+                <blockquote>
+                    <span>NAME:</span><span class="detail">OGUNTUASE Victor A.</span><br/>
+                    <span>ROLE:</span><span class="detail">Web developer and Machine Learning Engineer (Hopefully!)</span><br/>
+                    <span>SALARY:</span><span class="detail">$200k (median remuneration for Software Engineers in wonderland)</span><br/>
+                    <span>STACK:</span><span class="detail">Python and Web Technologies (HTML5, CSS3, ES6 JS)</span><br/>
+                    <span>GITHUB:</span><span class="detail"><a href="https://www.github.com/Elvicharde">https://www.github.com/Elvicharde<a></span><br/>
+                </blockquote>
+            </p>
+        </section>
+        <section id="project">
+            <h2>MY PROJECTS</h2>
+            <hr />
+            <p>
+                This is the final section of this page. Sooo, I ran out of steam. I think this page is already sufficient for this 
+                assessment. I can always add more information later.<br/>
+                However, not to brag, I did complete a user input collection program using Python for the PLP python course.
+                Its the first assignment of week 1 for that module, and it was quite interesting re-evaluating many of the concepts
+                I learnt. 
+                Anyway, you can checkout my <a href="https://www.github.com/Elvicharde">github</a> for most of the projects I've worked on.
+                <br/><br/>
+                Meanwhile, I once built a random quotes machine using React and some responsive design. Also, I have a much engaging portfolio website:
+                <ul>
+                    <li><a href="https://elvicharde.github.io/react-project-preview/">Random Quotes Machine</a></li><br/><br/>
+                    <li><a href="https://elvicharde.github.io/website_preview/">Slightly less ridiculous Portfolio Website</a></li>
+                </ul>
+            </p>
+        </section>
+
+        <footer style="text-align: center; margin-bottom: 5%;">
+            This website is powered by elvicharde&trade; for &copy;PLP 2024
+        </footer>
+    </body>
+</html>
