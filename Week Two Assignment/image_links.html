@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>elvicharde's sample website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <style>
+            body {
+                scroll-behavior: smooth;
+                background-color: #fbfbfe;
+                font-family: "Courier New", Courier, monospace, sans-serif;
+            }
+
+            header {
+                position: fixed;
+                overflow: hidden;
+                top: 0%;
+                left: 0%;
+                height: 13vh;
+                width: 100%;
+                text-align: center;
+                background-color: #fbfbfe;
+                z-index: 99;
+            }
+
+            nav{max-height: 60%;}
+
+            nav > ul {
+                float: right;
+                width: 30%;
+                height: 80%;
+                text-align: center;
+            }
+
+            nav > span {
+                display: inline-block;
+                position: relative;
+                top: 0.1em;
+                right: 30%;
+                text-align: center;
+                font-size: 50px;
+                border-radius: 50%;
+                width: 3.5%;
+                background-color: aliceblue;
+            }
+
+            section { 
+                width: 80%;
+                margin: auto;
+                margin-top: 40vh;
+            }
+
+            #home {
+                margin-top: 20vh;
+            }
+
+            #menu {
+                margin-top: 10vh;
+            }
+
+            h2 {
+                color: #2f27ce;
+            }
+
+            p, ol > li {
+                line-height: 1.8;
+                font-size: 20px;
+                text-align: justify;
+            }
+
+            ul > li {
+                display: inline-block;
+                font-size: large;
+                width: 20%;
+                padding-top: 3%;
+            }
+
+            li > a,
+            span > a {
+                text-decoration: none;
+                color: #050315;
+            }
+
+            li > a:hover {
+                background-color: #050315;
+                color:aliceblue ;
+            }
+
+            nav > span:hover {
+                cursor: pointer;
+                box-shadow: -3px 2px aliceblue, 3px 2px aliceblue,
+                    -3px -2px aliceblue, 3px -2px aliceblue;
+            }
+
+            span > a:hover {
+                font-size: 1.1em;
+            }
+
+            span > a {
+                padding: 5%;
+                margin-left: 8%;
+                color: #050315;
+            }
+
+            figure {
+                position: relative;
+                right: 4%;
+                width: 100%;
+                height: 80vh;
+                text-align: center;
+            }
+
+            #image-grid{
+                display: flex;
+                flex-direction: row wrap;
+                align-items: stretch;
+                justify-content: center;
+                gap: 1em;
+                height: auto;
+            }
+
+            #image-grid > span{
+                width: calc(100%/3);
+            }
+
+            span > img{
+                object-fit: fill;
+                max-width: 100%;
+                height: 100%;
+                border-radius: 5px;
+           } 
+
+            figcaption, #nature > p{
+                font-size: 1.2em;
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .food-img{
+                width: 30%;
+                height: auto;
+                border-radius: 2px;
+                aspect-ratio: 16/9;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <span><a href="#home" alt="logo">E</a></span>
+                <ul>
+                    <li><a href="#home" alt="nav item">HOME</a></li>
+                    <li>
+                        <a href="#nature" alt="nav item">NATURE</a>
+                    </li>
+                    <li><a href="#food" alt="nav item">FOOD</a></li>
+                </ul>
+            </nav>
+            <p><hr /></p>
+        </header>
+        <section id="home">
+            <h2>WELCOME</h2>
+            <p>
+                This is the landing spot for this barebones website. This
+                website does not have many cool features like games, media
+                files, ninja tricks, cooking tips, or the bare minimum - good
+                css!<br />
+                Anyway, here is a random image about
+                <strong>technology</strong> for your veiwing pleasure.
+                <figure>
+                    <img
+                        src="images/technology.jpg"
+                        alt="image about technology"
+                    />
+                    <figcaption>
+                        Image of some cranes. This depicts technology, I guess!
+                    </figcaption>
+                </figure>
+            </p>
+            <br/>
+        </section>
+
+        <section id="nature">
+            <h2>NATURE</h2>
+            <p>
+                Here, you will find some interesting images that may make you have a better appreciation for <strong>mother nature</strong>
+                <div id="image-grid">
+                    <span><img src="images/nature/nature.jpg" alt="A tree in the sunset"></span>
+                    <span><img src="images/nature/nature2.jpg" alt="A beautiful island"></span>
+                    <span><img src="images/nature/nature3.jpg" alt="a dense moss covered forest"></span>                  
+                </div>
+                <p>A grid of images about nature</p>
+            </p>
+        </section>
+        
+        <section id="menu">
+            <h2>MENU</h2>
+            <p >
+                Whats life without a little spice?<br/>
+                Here you will find a few cuisines I have curated across various cultures of the world.<br/>
+                <ol>
+                    <li>Steak<br/><img src="images/food/steak.jpg" alt="hyperlink to a steak photo" class="food-img"></li>
+                    <li>Salmon<br/><img src="images/food/salmon.jpg" alt="hyperlink to a steak photo" class="food-img"></li>
+                    <li>Jollof Rice (my favourite from Nigeria)<br/><img src="images/food/jollof-rice.jpg" alt="hyperlink to a steak photo" class="food-img"></li>
+                </ol>
+            </p>
+        </section>
+        <footer style="text-align: center; margin-bottom: 5%">
+            This website is powered by elvicharde&trade; for &copy;PLP 2024
+        </footer>
+    </body>
+</html>
