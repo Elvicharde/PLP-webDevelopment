@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+
+    /* Declaring color palette */
+    --text: #08191a;
+    --background: #fafdfe;
+    --primary: #4cc3c9;
+    --secondary: #e19dbb;
+    --accent: #d19d68;
+}
+
+html {
+    font-size: 10px;
+    background-color: var(--primary);
+}
+
+body {
+    width: 93%;
+    margin: auto;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--text);
+}
+
+header {
+    height: 20rem;
+    background-color: var(--primary);
+    padding: 0.5rem;
+    width: 100%;
+}
+
+section {
+    padding: 0 5rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+#surname {
+    font-size: 5.5rem;
+    margin-right: 1rem;
+}
+
+#other-names {
+    font-size: 4.5rem;
+    font-variant: small-caps;
+}
+
+#introduction {
+    height: 60rem;
+    background-color: var(--background);
+    padding-top: 0.1rem;
+    line-height: 2.3;
+}
+
+#user-info {
+    text-align: justify;
+    word-spacing: -0.09rem;
+}
+
+#skills,
+#contact {
+    height: 200rem;
+    background-color: var(--background);
+    padding-top: 0.1rem;
+    line-height: 2;
+}
+
+#contact {
+    height: 45rem;
+    margin-bottom: 2rem;
+}
+
+#skills > h2,
+#contact > h2,
+#introduction > h2 {
+    width: fit-content;
+    padding: 0.5rem;
+    border: 0.1rem solid var(--primary);
+    box-shadow: 0.2rem 0.2rem var(--primary), 0.5rem 1rem black;
+    font-variant: small-caps;
+}
+
+.skills-heading {
+    font-weight: 600;
+    width: fit-content;
+    padding: 0.5rem;
+}
+
+.skills:hover {
+    background-color: var(--primary);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: 0.1rem solid #ddd;
+}
+
+ul li {
+    padding: 0.8rem 1.6rem;
+    border-bottom: 0.1rem solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul[id="social-links"],
+ul[id="social-links"] > li {
+    border: none;
+}
+
+a:hover {
+    background-color: var(--accent);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        height: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    section {
+        padding: 0 3rem;
+    }
+
+    #introduction {
+        height: 150rem;
+    }
+
+    #surname {
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+
+    #other-names {
+        font-size: 3rem;
+        font-variant: small-caps;
+    }
+
+    #skills,
+    #contact {
+        height: 205rem;
+    }
+
+    #contact {
+        height: 50rem;
+        margin-bottom: 2rem;
+    }
+
+    #skills > h2,
+    #contact > h2,
+    #introduction > h2 {
+        margin-bottom: 3.5rem;
+        box-shadow: 0.2rem 0.2rem var(--primary), 0.5rem 1rem black;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+
+    header {
+        height: 10rem;
+    }
+
+    #surname {
+        font-size: 4rem;
+        margin: auto;
+    }
+
+    #other-names {
+        font-size: 3rem;
+    }
+
+    #introduction {
+        height: 132rem;
+    }
+
+    #skills,
+    #contact {
+        height: 205rem;
+    }
+
+    #contact {
+        height: 52rem;
+        margin-bottom: 2rem;
+    }
+
+    #skills > h2,
+    #contact > h2,
+    #introduction > h2 {
+        margin-bottom: 3.5rem;
+        box-shadow: 0.2rem 0.2rem var(--primary), 0.5rem 1rem black;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+
+    header {
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    #surname {
+        font-size: 4rem;
+        margin: auto;
+    }
+
+    #other-names {
+        font-size: 3rem;
+    }
+
+    #introduction {
+        height: 120rem;
+    }
+
+    #skills,
+    #contact {
+        height: 205rem;
+    }
+
+    #contact {
+        height: 50rem;
+        margin-bottom: 2rem;
+    }
+
+    #skills > h2,
+    #contact > h2,
+    #introduction > h2 {
+        margin-bottom: 3.5rem;
+        box-shadow: 0.2rem 0.2rem var(--primary), 0.5rem 1rem black;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    #introduction {
+        height: 105rem;
+    }
+
+    #surname {
+        font-size: 4.5rem;
+        margin: auto;
+    }
+
+    #other-names {
+        font-size: 3.5rem;
+    }
+
+    #skills,
+    #contact {
+        height: 202rem;
+    }
+
+    #contact {
+        height: 50rem;
+        margin-bottom: 2rem;
+    }
+
+    #skills > h2,
+    #contact > h2,
+    #introduction > h2 {
+        margin-bottom: 3.5rem;
+        box-shadow: 0.2rem 0.2rem var(--primary), 0.5rem 1rem black;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #introduction {
+        margin-top: -7rem;
+    }
+}
